@@ -1,23 +1,50 @@
+/* ===== Base ===== */
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 1.5rem;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* ===== Imagen principal ===== */
+.hero-image {
+  display: block;
+  margin: 0 auto 1.5rem auto;
+  max-width: 360px;
+  width: 90%;
+  height: auto;
 }
 
+/* ===== Card ===== */
+.card {
+  padding: 1.5rem;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+/* Texto dentro de la card */
+.card p {
+  font-size: 1.05rem;
+  line-height: 1.75;
+  margin-bottom: 1.3rem;
+  color: #e6e6e6;
+  text-align: left;
+}
+
+/* Último párrafo con un toque más íntimo */
+.card p:last-child {
+  margin-bottom: 0;
+  font-style: italic;
+}
+
+/* ===== Texto inferior ===== */
+.read-the-docs {
+  color: #888;
+  font-size: 0.9rem;
+  margin-top: 1.5rem;
+}
+
+/* ===== Animaciones (Vite default, no afecta lectura) ===== */
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
@@ -33,10 +60,21 @@
   }
 }
 
-.card {
-  padding: 2em;
-}
+/* ===== Mejora en pantallas grandes ===== */
+@media (min-width: 768px) {
+  #root {
+    padding: 2rem;
+  }
 
-.read-the-docs {
-  color: #888;
+  .hero-image {
+    max-width: 420px;
+  }
+
+  .card {
+    max-width: 720px;
+  }
+
+  .card p {
+    font-size: 1.1rem;
+  }
 }
