@@ -1,4 +1,3 @@
-import { useState } from 'react'
 
 import './App.css'
 import DYA from './DYA2.png'
@@ -6,7 +5,6 @@ import dulcecita from './dulcecita.png'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
